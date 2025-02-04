@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 30px;
+  &__wrapper {
+    padding: 30px;
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    justify-content: space-between;
+
+    aside {
+      flex: 1;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.footer {
+  padding: 30px;
+}
+
+@import url(reset.scss);
+@import url(components/index.scss);
